@@ -1,0 +1,2 @@
+require("canerosso")
+print("prova")
