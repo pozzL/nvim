@@ -23,4 +23,5 @@ vim.g.UltiSnipsSnippetDirectories = { "~/Documenti/git/snippetVim" }
 vim.lsp.config("clangd")
 vim.lsp.config("texlab")
 vim.lsp.config("lua_ls")
+vim.lsp.config("rust-analyzer")
 

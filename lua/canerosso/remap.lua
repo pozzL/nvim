@@ -18,3 +18,12 @@ vim.keymap.set('n', 'gd', vim.lsp.buf.definition,
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, 
                 { desc = "Azioni sul codice" })
 
+local keymap = vim.keymap.set
+local opts = { noremap = true, silent = true }
+
+keymap("i", "(", "()<Left>", opts)
+keymap("i", '"', '""<Left>', opts)
+keymap("i", "'", "''<Left>", opts)
+keymap("i", "[", "[]<Left>", opts)
+keymap("i", "{", "{}<Left>", opts)
+

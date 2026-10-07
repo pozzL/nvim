@@ -45,7 +45,8 @@ require("lazy").setup({
     config = function()
       require("nvim-treesitter.configs").setup({
         ensure_installed = { "c", "lua", "vim", "vimdoc","cpp","cuda","javascript",
-                             "python","php" ,"html","css","typescript","javascript","tsx"},
+                             "python","php" ,"html","css","typescript","javascript","tsx",
+                              "rust" },
         highlight =
           {
             enable = true,
@@ -92,7 +93,7 @@ require("lazy").setup({
     config = function()
       require("mason").setup()
 
-      local servers = { "clangd", "texlab", "lua_ls" }
+      local servers = { "clangd", "texlab", "lua_ls", "rust-analyzer"} --add to plugin too
       require("mason-lspconfig").setup({
         ensure_installed = servers,
       })
